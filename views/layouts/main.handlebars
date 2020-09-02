@@ -12,6 +12,13 @@
   <script defer
 src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA6xQiM02JnjQLtng97xU9ATL1MOexCo8A&callback=initMap">
 </script>
+<style>
+ #map {
+  width: 100%;
+  height: 400px;
+  background-color: grey;
+}
+</style>
 
 </head>
 
@@ -44,22 +51,40 @@ src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA6xQiM02JnjQLtng97xU9ATL1
     <h1 class="display-4">SHELTER CONNECT</h1>
     <p class="lead">Shelter Connect: A natural disaster resource for sharing information, location, conditions, and needs of any California Shelters.</p>
   </div>
+  
 </div>
- <div id="map"></div>
+ 
 
+{{!-- <div id="map">map</div> --}}
 
   <main class="col-auto">
     {{{body}}}
+    
   </main>
 
   <footer class="flex-row justify-center">
     &copy; Shelter-App
   </footer>
 </body>
+<script src="/javascript/logout.js"></script>
+{{!-- <script>
+function initMap() {
+
+    {
+        var uluru = {lat: -25.344, lng: 131.036};
+      
+        var map = new google.maps.Map(document.getElementById('map'), {
+          zoom: 4,
+          center: uluru
+        });
+      
+      }
+
+}
+</script> --}}
 
 </html>
-<script src="/javascript/logout.js"></script>
-<scrpt src='/javascript/map.js'></scrpt>
+
 
 
 
