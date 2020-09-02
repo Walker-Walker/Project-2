@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Shelter Connect</title>
+  {{!-- <link href="https://fonts.googleapis.com/css?family=IBM+Plex+Sans:400,400i,700&display=swap" rel="stylesheet"> --}}
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+  {{!-- <link rel="stylesheet" href="/stylesheets/style.css"> --}}
+</head>
+
+<body class="container-fluid">
+ <nav class="navbar navbar-expand-lg navbar-light bg-light">
+  {{!-- <a class="navbar-brand" href="/">Home</a> --}}
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+    <div class="navbar-nav">
+      <a class="nav-link active" href="/">Home <span class="sr-only">(current)</span></a>
+      <a class="nav-link" href="/dashboard">Dashboard</a>
+      {{!-- {{#if loggedIn}} --}}
+      <a class="nav-link" href="/login">Login</a>
+      {{!-- {{else}} --}}
+      <a class="nav-link" href="#" id="logout-link">Logout</a>
+      {{!-- {{/if}} --}}
+
+          {{!-- <li class="li-inline nav-item"><a href="/">Home</a></li>
+      <li class="li-inline nav-item"><a href="/dashboard">Dashboard</a></li>
+      <li class="li-inline nav-item"><a href="/login">Login</a></li>
+      <li class="li-inline nav-item"><a href="#" id="logout-link">Logout</a></li> --}}
+    </div>
+  </div>
+</nav>
+  <header class="hero">
+    {{!-- <h1 class="app-title"><a href="/">Shelter</a></h1> --}}
+  </header>
+  
+<div class="jumbotron jumbotron-fluid">
+  <div class="container">
+    <h1 class="display-4">SHELTER CONNECT</h1>
+    <p class="lead">Shelter Connect: A natural disaster resource for sharing information, location, conditions, and needs of any California Shelters.</p>
+  </div>
+</div>
+ 
+  <main class="col-auto">
+    {{{body}}}
+  </main>
+
+  <footer class="flex-row justify-center">
+    &copy; Shelter-App
+  </footer>
+</body>
+
+{{!-- {{#if loggedIn}} --}}
+<script src="/javascript/logout.js"></script>
+{{!-- {{/if}} --}}
+
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+{{!-- <!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Shelter</title>
+  <link href="https://fonts.googleapis.com/css?family=IBM+Plex+Sans:400,400i,700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/stylesheets/style.css">
+</head>
+
+<body class="flex-column min-100-vh">
+  <nav class="navbar">
+    <ul>
+      <li class="li-inline nav-item"><a href="/">Home</a></li>
+      <li class="li-inline nav-item"><a href="/dashboard">Dashboard</a></li>
+      <li class="li-inline nav-item"><a href="/login">Login</a></li>
+      <li class="li-inline nav-item"><a href="#" id="logout-link">Logout</a></li>
+    </ul>
+  </nav>
+  <header class="hero">
+    <h1 class="app-title"><a href="/">Shelter</a></h1>
+  </header>
+
+  <main class="col-auto">
+    {{{body}}}
+  </main>
+
+  <footer class="flex-row justify-center">
+    &copy; Shelter-App
+  </footer>
+</body>
+
+</html>
+<script src="/javascript/logout.js"></script> --}}
