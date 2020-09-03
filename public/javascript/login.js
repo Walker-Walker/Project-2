@@ -14,7 +14,7 @@ const loginFormHandler = async function(event) {
     .then(function() {
       document.location.replace("/dashboard");
     })
-    .catch(err => console.log(err));
+    .catch(err => console.log(err), window.alert("Username does not exist!"));
 };
 
 document
