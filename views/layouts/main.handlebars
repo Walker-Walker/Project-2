@@ -6,80 +6,90 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Shelter Connect</title>
   {{!-- <link href="https://fonts.googleapis.com/css?family=IBM+Plex+Sans:400,400i,700&display=swap" rel="stylesheet"> --}}
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
-  {{!-- <link rel="stylesheet" href="/stylesheets/style.css"> --}}
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+  <link rel="stylesheet" href="/stylesheets/style.css">
   <script defer
-src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA6xQiM02JnjQLtng97xU9ATL1MOexCo8A&callback=initMap">
-</script>
-<style>
- #map {
-  width: 100%;
-  height: 400px;
-  background-color: grey;
-}
-</style>
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA6xQiM02JnjQLtng97xU9ATL1MOexCo8A&callback=initMap">
+    </script>
+  <style>
+    #map {
+      width: 100%;
+      height: 400px;
+      background-color: grey;
+    }
+  </style>
 
 </head>
 
-<body class="container-fluid">
- <nav class="navbar navbar-expand-lg navbar-light bg-light">
-  {{!-- <a class="navbar-brand" href="/">Home</a> --}}
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
-  </button>
-  <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-    <div class="navbar-nav">
-      <a class="nav-link active" href="/">Home <span class="sr-only">(current)</span></a>
-      <a class="nav-link" href="/dashboard">Dashboard</a>
-      {{#if loggedIn}}
-      <a class="nav-link" href="#" id="logout-link">Logout</a>
-      {{else}}
-      <a class="nav-link" href="/login">Login</a>
-      {{/if}}
+<body class="container-fluid" id="background-style">
+  <nav class=" shadow p-3 mb-5 bg-white rounded navbar navbar-expand-lg navbar-light bg-light" id="nav-style">
+    {{!-- <a class="navbar-brand" href="/">Home</a> --}}
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
+      aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+      <div class="navbar-nav">
+        <a class="nav-link active" href="/">Home <span class="sr-only">(current)</span></a>
+        <a class="nav-link" href="/dashboard">Dashboard</a>
+        {{#if loggedIn}}
+        <a class="nav-link" href="#" id="logout-link">Logout</a>
+        {{else}}
+        <a class="nav-link" href="/login">Login</a>
+        {{/if}}
 
-          {{!-- <li class="li-inline nav-item"><a href="/">Home</a></li>
+        {{!-- <li class="li-inline nav-item"><a href="/">Home</a></li>
       <li class="li-inline nav-item"><a href="/dashboard">Dashboard</a></li>
       <li class="li-inline nav-item"><a href="/login">Login</a></li>
       <li class="li-inline nav-item"><a href="#" id="logout-link">Logout</a></li> --}}
+      </div>
+    </div>
+  </nav>
+
+<
+  <div class="jumbotron jumbotron-fluid" id="jumbo-style">
+    <div class="container">
+      <h1 class="display-4">SHELTER CONNECT</h1>
+      <p class="lead">Shelter Connect: A natural disaster resource for sharing information, location, conditions, and
+        needs of any California Shelters.</p>
     </div>
   </div>
-</nav>
+
+
+
   <header class="hero">
     {{!-- <h1 class="app-title"><a href="/">Shelter</a></h1> --}}
+{{!-- <nav class="navbar navbar-light bg-light">
+  <form class="form-inline">
+    <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+    <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search Shelters</button>
+  </form> --}}
+</nav>
   </header>
-  
-<div class="jumbotron jumbotron-fluid">
-  <div class="container">
-    <h1 class="display-4">SHELTER CONNECT</h1>
-    <p class="lead">Shelter Connect: A natural disaster resource for sharing information, location, conditions, and needs of any California Shelters.</p>
-  </div>
-  
-</div>
- 
-
-{{!-- <div id="map">map</div> --}}
+  {{!-- <div id="map">map</div> --}}
 
   <main class="col-auto">
     {{{body}}}
-    
+
   </main>
 
 </body>
 <script src="/javascript/logout.js"></script>
 {{!-- <script>
-function initMap() {
+  function initMap() {
 
     {
-        var uluru = {lat: -25.344, lng: 131.036};
-      
-        var map = new google.maps.Map(document.getElementById('map'), {
-          zoom: 4,
-          center: uluru
-        });
-      
-      }
+      var uluru = { lat: -25.344, lng: 131.036 };
 
-}
+      var map = new google.maps.Map(document.getElementById('map'), {
+        zoom: 4,
+        center: uluru
+      });
+
+    }
+
+  }
 </script> --}}
 
 
