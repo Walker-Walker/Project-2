@@ -9,6 +9,7 @@ Shelter Connect is a web application that enables users to post about what shelt
 - [Installation](#installation)
 - [Usage](#usage)
 - [Contributing](#contributing)
+- [Task Breakdown](#Task Breakdown)
 - [Tests](#tests)
 - [License](#license)
 - [Questions](#questions)
@@ -26,16 +27,21 @@ Clone this repository and run `npm i` to download and install the dependencies. 
 
 After installing start the server by running `npm start`.
 
-## Contributers
+## Contributing
 
-- Alex Walker
-- Maximo Bahamondes
-- Mario Viana
+Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
 
+Please make sure to update tests as appropriate.
+
+## Task Breakdown
+
+- Alex: Handlebars-Templateing, Server Structure, Model Design, Database Structure, Routing, Testing
+- Maximo: Handlebars, Readme
+- Mario: Google Slides, Presenting, Concept
 
 ## Tests
 
-This project uses Nodemon so you can make changes to the server without having to restart it. This project also contains seeds to test out the database.
+This project uses Nodemon so you can make changes to the server without having to restart it. This project also contains seeds to test out the database. In addition there are many technologies that were used to help test the database such as:  mocha , sinon and chai. 
 
 ## Questions
 
