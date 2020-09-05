@@ -9,7 +9,7 @@ Shelter Connect is a web application that enables users to post about what shelt
 - [Installation](#installation)
 - [Usage](#usage)
 - [Contributing](#contributing)
-- [Task Breakdown](#Task Breakdown)
+- [Task Breakdown](#Task-Breakdown)
 - [Tests](#tests)
 - [License](#license)
 - [Questions](#questions)
