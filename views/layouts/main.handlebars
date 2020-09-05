@@ -12,16 +12,7 @@
   <script defer
     src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA6xQiM02JnjQLtng97xU9ATL1MOexCo8A&callback=initMap">
     </script>
-  {{!-- <style>
-    #map {
-    
-      width: 50%;
-      height: 200px;
-      opacity: 0.8;
-      border-style:groove;
-      background-color: grey;
-    }
-  </style> --}}
+
 
 </head>
 
@@ -39,7 +30,7 @@
         {{#if loggedIn}}
         <a class="nav-link" href="#" id="logout-link">Logout</a>
         <!--add anchor link for map -->
-        <a class ="nav-link" href="/map" id='map-page-link'>Map</a>
+        {{!-- <a class ="nav-link" href="/map" id='map-page-link'>Map</a> --}}
         {{else}}
         <a class="nav-link" href="/login">Login</a>
         {{/if}}
@@ -82,26 +73,11 @@
 
 </body>
 <script src="/javascript/logout.js"></script>
-<script>
-  function initMap() {
-
-    {
-      var uluru = { lat: -25.344, lng: 131.036 };
-
-      var map = new google.maps.Map(document.getElementById('map'), {
-        zoom: 4,
-        center: uluru
-      });
-
-    }
-
-  }
-</script>
 
 
 
 {{#if loggedIn}}
 <script src="/javascript/logout.js"></script>
 {{/if}}
-{{!-- <div id="map">map</div> --}}
+
 </html>
