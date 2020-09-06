@@ -12,6 +12,8 @@ Shelter Connect is a web application that enables users to post about what shelt
 - [Task Breakdown](#Task-Breakdown)
 - [Tests](#tests)
 - [License](#license)
+- [Deployed Application](# Link to Deployed Application)
+- [ScreenShot](#screen-shot)
 - [Questions](#questions)
 
 ## Installation
@@ -45,6 +47,9 @@ This project uses Nodemon so you can make changes to the server without having t
 
 ## Link to Deployed Application
 [shelter-connection](https://shelter-connection.herokuapp.com/)
+
+## Screen-Shot 
+![screenshot](/public/images/screenshot.JPEG)
 ## Questions
 
 Contact us:
