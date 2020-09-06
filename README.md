@@ -12,7 +12,7 @@ Shelter Connect is a web application that enables users to post about what shelt
 - [Task Breakdown](#Task-Breakdown)
 - [Tests](#tests)
 - [License](#license)
-- [Deployed Application](# Link to Deployed Application)
+- [Deployed Application](#Deployed-Application)
 - [ScreenShot](#screen-shot)
 - [Questions](#questions)
 
@@ -45,11 +45,14 @@ Please make sure to update tests as appropriate.
 
 This project uses Nodemon so you can make changes to the server without having to restart it. This project also contains seeds to test out the database. In addition there are many technologies that were used to help test the database such as:  mocha , sinon and chai. 
 
-## Link to Deployed Application
+## Deployed Application
+
 [shelter-connection](https://shelter-connection.herokuapp.com/)
 
 ## Screen-Shot 
-![screenshot](/public/images/screenshot.JPEG)
+
+![screenshot](/public/images/screenshot.JPG)
+
 ## Questions
 
 Contact us:
